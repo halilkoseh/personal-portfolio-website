@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 
 
 
-$DATABASE_URL=parse_url(‘DATABASE_URL’);
+$DATABASE_URL=parse_url("mysql://ca9m8r92v4fc6rm3:wcqa0m6tywhk6kfi@rtzsaka6vivj2zp1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/gprm6pyt9y999n23");
 
 
 return [
