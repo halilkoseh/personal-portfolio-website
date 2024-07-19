@@ -90,7 +90,8 @@
                                 </li>
                                 <li><a class="dropdown-item"href="/en">English</a>
                                 </li>
-                                <li><a class="dropdown-item" href="/ar" onclick="changeLanguage('ar')">العربية</a>
+                                <li><a class="dropdown-item" href="/ar"
+                                        onclick="changeLanguage('ar')">العربية</a>
                                 </li>
                             </ul>
                         </li>
@@ -111,64 +112,93 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="mt-5">
-                                    <p class="mb-1 text-lg font-bold text-gray-700 italic">SELECT * FROM ziyaretçiler
-                                        WHERE
-                                        name = ' <span class="" style="color: #858585;">{{ $username }}</span> ' ;
-                                    </p>
-                                    <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">Selamlar
-                                        Ben Halil KÖSE</h1>
-                                    <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">YAZILIM
-                                        MÜHENDİSLİĞİ</p>
-                                    <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
-                                        <nav role="navigation">
-                                            <ul class="nav justify-content-left">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="https://linktr.ee/halilkoseh"
-                                                        title="Linktree">
-                                                        <i class="fas fa-link"></i>
-                                                        <span class="menu-title sr-only">Linktree</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="https://www.linkedin.com/in/halilkoseh/"
-                                                        title="LinkedIn">
-                                                        <i class="fab fa-linkedin"></i>
-                                                        <span class="menu-title sr-only">LinkedIn</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="https://github.com/halilkoseh"
-                                                        title="GitHub">
-                                                        <i class="fab fa-github"></i>
-                                                        <span class="menu-title sr-only">GitHub</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#contact" title="Email">
-                                                        <i class="fas fa-envelope"></i>
-                                                        <span class="menu-title sr-only">Email</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#contact" title="Phone">
-                                                        <i class="fas fa-phone"></i>
-                                                        <span class="menu-title sr-only">Phone</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="mt-3" data-aos="fade-up" data-aos-delay="200">
-                                        <a class="btn mt-1 hover-effect btn-custom" href="#contact"> İletişime Geçin
-                                            <i class="fa-solid fa-paper-plane"></i> </a>
+                                    <div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+                                        <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">
+                                            Selamlar Ben Halil KÖSE
+                                        </h1>
+                                        <p class="lead fw-normal mt-2" data-aos="fade-up" data-aos-delay="100">
+                                            YAZILIM MÜHENDİSLİĞİ
+                                        </p>
+                                        <div class="social-nav flex justify-end" data-aos="fade-up"
+                                            data-aos-delay="200">
+                                            <nav role="navigation">
+                                                <ul class="nav justify-content-left">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="https://linktr.ee/halilkoseh"
+                                                            title="Linktree">
+                                                            <i class="fas fa-link"></i>
+                                                            <span class="menu-title sr-only">Linktree</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link"
+                                                            href="https://www.linkedin.com/in/halilkoseh/"
+                                                            title="LinkedIn">
+                                                            <i class="fab fa-linkedin"></i>
+                                                            <span class="menu-title sr-only">LinkedIn</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="https://github.com/halilkoseh"
+                                                            title="GitHub">
+                                                            <i class="fab fa-github"></i>
+                                                            <span class="menu-title sr-only">GitHub</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#contact" title="Email">
+                                                            <i class="fas fa-envelope"></i>
+                                                            <span class="menu-title sr-only">Email</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#contact" title="Phone">
+                                                            <i class="fas fa-phone"></i>
+                                                            <span class="menu-title sr-only">Phone</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <div class="flex justify-end" data-aos="fade-up" data-aos-delay="200">
+                                            <a class="btn mt-1 hover-effect btn-custom" href="#contact">
+                                                İletişime Geçin <i class="fa-solid fa-paper-plane"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- Fixed the misplaced div here -->
+                                <div class="relative max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-3">
+                                    <div class="bg-gray-100 p-1 rounded-lg border text-gray-600 group">
+                                        <span class="text-blue-600">SELECT</span> *
+                                        <span class="text-blue-600">FROM</span> <span class="text-yellow-600">TBL_coffee_lovers</span> <br>
+                                        <span class="text-blue-600">WHERE</span> id <span class="text-blue-600">IN</span> ( <br>
+                                        <span class="text-blue-600">SELECT</span> id
+                                        <span class="text-blue-600">FROM</span> <span class="text-yellow-600">TBL_coffee_types</span>
+                                        <span class="text-blue-600"><br>WHERE</span> type = <span class="text-green-600">'espresso'</span>
+                                        <span class="text-blue-600">AND</span> sugar = <span class="text-red-600">'none'</span> );
+                                        <!-- Tooltip -->
+                                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="bg-white bg-opacity-50 backdrop-blur-lg text-gray-800 text-xs rounded py-2 px-4 shadow-lg">
+                                                "Gerçek kahveseverler, kahvelerini şekersiz içerler; tadını en derinlerde bulurlar."
+
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="wave-bg"></div>
             </header>
+
             <div class="section pt-4 px-3 px-lg-4" id="about">
                 <div class="container-narrow">
                     <div class="text-center mb-5">
