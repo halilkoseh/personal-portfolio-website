@@ -186,7 +186,7 @@
             <div id="popup" class="pop-up">
 
                 <div>
-                    <img src="images/resim2.jpeg" alt="Photo 2"
+                    <img src="images/foti1.jpg" alt="Photo 2"
                         class="w-full h-96 rounded-lg shadow-lg object-cover hover:scale-105 transition-transform duration-300">
                 </div>
                 <p class="text-center">Bu fotimiz nereden aşkımm ? </p>
